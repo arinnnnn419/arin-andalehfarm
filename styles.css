@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: Arial, inter;
+    background-color: #E5D2BE;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B5997B;
+    padding: 10px 20px;
+    font-family: italic;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.site-title {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+.header {
+    background-color: #BC9F81;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.hero {
+    background-image: linear-gradient(to right, #b69f87, rgba(223, 217, 210, 0.61)), url('img/km.jpg'); /* Ganti dengan URL gambar Anda */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:black;
+    padding-left: 50px;
+    padding: 0 50px; /* Memberikan padding kiri dan kanan untuk memberi ruang pada gambar bulan */
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.6em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.moon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  position: relative;
+    gap: 20px;
+}
+
+.moon:nth-child(1) {
+    position: absolute;
+    bottom: -200px;
+    right: 160px;
+}
+
+.moon:nth-child(2) {
+    position: absolute;
+    bottom: -50px; /* Jarak dari bawah */
+    right: 300px; /* Jarak dari kanan */
+}
+
+.moon:nth-child(3) {
+    position: absolute;
+    bottom: 0px; /* Jarak dari bawah */
+    right: 100px; /* Jarak dari kanan */
+}
+
+.moon {
+    width: 200px; /* Ukuran gambar bulan, bisa disesuaikan */
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang untuk efek bulan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.moon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #E5D2BE;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-us .title {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-us h2 {
+    font-size: 2.2em;
+    margin: 0;
+    color: #333;
+}
+
+.about-us .description {
+    flex: 2;
+    padding-left: 16px;
+}
+
+.about-us p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6em;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: row; /* Mengatur card dalam baris horizontal */
+    justify-content: center; /* Menyusun card di tengah secara horizontal */
+    gap: 80px; /* Jarak antar card */
+    padding: 50px 0;
+    flex-wrap: wrap; /* Membungkus card ke baris berikutnya jika diperlukan */
+    max-width: 1200px; /* Maksimal lebar container */
+    margin: 0 auto; /* Memusatkan container di tengah */
+}
+
+.card {
+    background-color: #BC9F81;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    margin-top: 20px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color:black;
+}
+
+.card p {
+    font-size: 14px;
+    color: black;
+    padding: 0 15px 15px;
+    line-height: 1.6em;
+    height: 324px;
+    width: auto;
+}
+
+.card .btn-buy {
+    margin-bottom: 20px; /* Memindahkan tombol ke bagian bawah card */
+    background-color: #4B3621;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+
+}
+
+.card .btn-buy:hover {
+    background-color: #e0b688   ;
+}
+
+.footer {
+    background-color: #BC9F81;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer .contact-info {
+    margin-top: 10px;
+}
+
+.footer .contact-info a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.footer .contact-info a:hover {
+    text-decoration: underline;
+}
